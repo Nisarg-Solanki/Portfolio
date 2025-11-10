@@ -5,7 +5,7 @@ export const PERSONAL_INFO = {
   phone: "",
   location: "",
   bio: "Full Stack Developer specializing in building exceptional digital experiences with modern web technologies",
-  avatar: "/images/nisarg-profile.JPG",
+  avatar: "/nisarg-profile.JPG",
 };
 
 export const SOCIAL_LINKS = {
