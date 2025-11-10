@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
       id="home"
       className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-20"
     >
-      <div className="container mx-auto px-4">
+      <div className="container lg:max-w-[75%] mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
             <div className="inline-block mb-4">
@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 flex justify-center">
+          <div className="max-md:flex-1 max-lg:pb-10 flex justify-center">
             <div className="relative">
               {PERSONAL_INFO?.avatar?.startsWith("/") ? (
                 <Image
