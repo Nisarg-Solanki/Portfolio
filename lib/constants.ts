@@ -60,6 +60,7 @@ export const SKILL_CATEGORIES = [
     skills: [
       { name: "Git", level: 88, color: "bg-orange-600" },
       { name: "REST API", level: 90, color: "bg-purple-600" },
+      { name: "GraphQL API", level: 90, color: "bg-pink-600" },
     ],
   },
 ];
