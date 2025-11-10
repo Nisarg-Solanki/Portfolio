@@ -1,5 +1,6 @@
 import { PROJECTS } from "@/lib/constants";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -26,9 +27,14 @@ export const Projects: FC = () => {
               key={index}
               className="group bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="bg-linear-to-br from-blue-500 to-purple-600 h-48 flex items-center justify-center text-6xl">
-                {project.image}
-              </div>
+              <Image
+                src={project.image}
+                height={0}
+                width={0}
+                sizes="100vh"
+                alt="img"
+                className="h-48 object-cover w-full"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {project.title}
@@ -48,6 +54,8 @@ export const Projects: FC = () => {
                 </div>
                 <Link
                   href={project.link || project.github}
+                  prefetch={false}
+                  target="_blank"
                   className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-4 transition-all"
                 >
                   View Project <ExternalLink size={16} />

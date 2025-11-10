@@ -20,13 +20,14 @@ export const About: React.FC = () => {
           <div className="space-y-6">
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               I'm a passionate Full Stack Developer with expertise in building
-              modern web applications. I love turning complex problems into
-              simple, beautiful and intuitive designs.
+              modern, high-performance web applications. I enjoy transforming
+              complex problems into simple, elegant, and intuitive solutions.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              With a strong foundation in both frontend and backend
-              technologies, I create seamless user experiences that drive
-              business growth and user satisfaction.
+              With a strong foundation in both frontend and backend development,
+              I focus on creating seamless, responsive, and user-centric
+              experiences that not only engage users but also drive business
+              growth and efficiency.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="space-y-3">

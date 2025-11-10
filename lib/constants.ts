@@ -80,18 +80,28 @@ export const PROJECTS = [
   {
     title: "Movie Website",
     description:
-      "A full-stack e-commerce solution with payment integration and admin dashboard.",
-    image: "🎬",
+      "An interactive movie platform built with React and Redux Toolkit, allowing users to explore, search, and manage favorite movies. Features a responsive UI and smooth navigation for an engaging experience.",
+    image: "/movie-screening-image.png",
     tech: ["React.js", "Redux Toolkit"],
     link: "",
     github: "https://github.com/Nisarg-Solanki/Movie-Screening",
   },
   {
     title: "Myntra Clone",
-    description: "Collaborative task management tool with real-time updates.",
-    image: "🛒",
+    description:
+      "A frontend-focused e-commerce web app inspired by Myntra, featuring product browsing, cart and wishlist management, and category-based filtering with a fully responsive design.",
+    image: "/myntra-clone-image.png",
     tech: ["React.js", "Node.js", "Express.js"],
     link: "",
     github: "https://github.com/Nisarg-Solanki/Myntr-Clone",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A modern personal portfolio built with Next.js and Tailwind CSS to showcase projects and experience. Includes a contact form, dark/light theme toggle, and integrated analytics for performance tracking.",
+    image: "/portfolio-image.png",
+    tech: ["Next.js", "Tailwind CSS", "Formspree", "Vercel"],
+    link: "",
+    github: "https://github.com/Nisarg-Solanki/Portfolio",
   },
 ];
