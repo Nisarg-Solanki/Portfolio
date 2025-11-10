@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
 
-const inter = Inter({ subsets: ["latin"] });
 const domain = process.env.NEXT_PUBLIC_DOMAIN || "";
 
 export const metadata: Metadata = {
@@ -62,25 +59,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <meta name="robots" content="index, follow" />
-        {/* 👇 Pre-hydration theme fix */}
-        {/* <Script id="theme-init" strategy="beforeInteractive">
-          {`
-            (function() {
-              try {
-                const stored = localStorage.getItem('theme');
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                const theme = stored || (prefersDark ? 'dark' : 'light');
-                document.documentElement.classList.add(theme);
-              } catch (_) {}
-            })();
-          `}
-        </Script> */}
       </head>
 
-      <body className={`${inter.className} transition-colors duration-300`}>
+      <body>
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
       </body>
