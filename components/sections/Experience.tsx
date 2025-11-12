@@ -1,5 +1,5 @@
 import { EXPERIENCES } from "@/lib/constants";
-import { Calendar } from "lucide-react";
+import { FiCalendar } from "react-icons/fi";
 
 export const Experience: React.FC = () => {
   return (
@@ -8,17 +8,17 @@ export const Experience: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Work{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Experience
             </span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-purple-600 hidden md:block"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-linear-to-b from-blue-600 to-purple-600 hidden md:block"></div>
 
             <div className="space-y-12">
               {EXPERIENCES.map((exp, index) => (
@@ -40,7 +40,7 @@ export const Experience: React.FC = () => {
                             </p>
                           </div>
                           <span className="text-gray-600 dark:text-gray-400 flex items-center gap-2 mt-2 md:mt-0">
-                            <Calendar size={16} />
+                            <FiCalendar size={16} />
                             {exp.period}
                           </span>
                         </div>

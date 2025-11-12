@@ -1,3 +1,20 @@
+import { FiCloud } from "react-icons/fi";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiGit,
+  SiGraphql,
+} from "react-icons/si";
+
 export const PERSONAL_INFO = {
   name: "Nisarg Solanki",
   title: "MERN Stack Developer",
@@ -22,18 +39,20 @@ export const STATS = {
 };
 
 export const SKILLS = [
-  { name: "HTML 5", logo: "" },
-  { name: "CSS 3", logo: "" },
-  { name: "JavaScript", logo: "" },
-  { name: "TypeScript", logo: "" },
-  { name: "React Js", logo: "" },
-  { name: "Next Js", logo: "" },
-  { name: "Tailwind CSS", logo: "" },
-  { name: "Node Js", logo: "" },
-  { name: "Express JS", logo: "" },
-  { name: "Mongo DB", logo: "" },
-  { name: "MySql", logo: "" },
-  { name: "Git", logo: "" },
+  { name: "HTML 5", logo: SiHtml5, color: "#E34F26" },
+  { name: "CSS 3", logo: SiCss3, color: "#1572B6" },
+  { name: "JavaScript", logo: SiJavascript, color: "#F7DF1E" },
+  { name: "TypeScript", logo: SiTypescript, color: "#3178C6" },
+  { name: "React Js", logo: SiReact, color: "#61DAFB" },
+  { name: "Next Js", logo: SiNextdotjs, color: "#000000" },
+  { name: "Tailwind CSS", logo: SiTailwindcss, color: "#38B2AC" },
+  { name: "Node Js", logo: SiNodedotjs, color: "#339933" },
+  { name: "Express JS", logo: SiExpress, color: "#808080" },
+  { name: "Mongo DB", logo: SiMongodb, color: "#47A248" },
+  { name: "MySql", logo: SiMysql, color: "#4479A1" },
+  { name: "Git", logo: SiGit, color: "#F05032" },
+  { name: "REST API", logo: FiCloud, color: "#9333EA" },
+  { name: "GraphQL API", logo: SiGraphql, color: "#E535AB" },
 ];
 
 export const SKILL_CATEGORIES = [

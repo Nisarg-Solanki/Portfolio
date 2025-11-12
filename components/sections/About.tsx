@@ -1,5 +1,5 @@
 import React from "react";
-import { User, Phone, Mail, MapPin } from "lucide-react";
+import { FiUser, FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { PERSONAL_INFO, STATS } from "@/lib/constants";
 
 export const About: React.FC = () => {
@@ -32,13 +32,13 @@ export const About: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <User size={20} className="text-blue-600 shrink-0" />
+                  <FiUser size={20} className="text-blue-600 shrink-0" />
                   <span className="font-medium">Name:</span>
                   <span className="text-sm">{PERSONAL_INFO.name}</span>
                 </div>
                 {PERSONAL_INFO.location && (
                   <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                    <MapPin size={20} className="text-blue-600 shrink-0" />
+                    <FiMapPin size={20} className="text-blue-600 shrink-0" />
                     <span className="font-medium">Location:</span>
                     <span className="text-sm">{PERSONAL_INFO.location}</span>
                   </div>
@@ -46,13 +46,13 @@ export const About: React.FC = () => {
               </div>
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <Mail size={20} className="text-blue-600 shrink-0" />
+                  <FiMail size={20} className="text-blue-600 shrink-0" />
                   <span className="font-medium">Email:</span>
                   <span className="text-sm">{PERSONAL_INFO.email}</span>
                 </div>
                 {PERSONAL_INFO?.phone && (
                   <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                    <Phone size={20} className="text-blue-600 shrink-0" />
+                    <FiPhone size={20} className="text-blue-600 shrink-0" />
                     <span className="font-medium">Phone:</span>
                     <span className="text-sm">{PERSONAL_INFO.phone}</span>
                   </div>

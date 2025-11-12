@@ -1,6 +1,7 @@
 "use client";
 import { useForm, ValidationError } from "@formspree/react";
-import { Send } from "lucide-react";
+import { FiSend } from "react-icons/fi";
+
 import { useEffect, useRef } from "react";
 
 const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
@@ -79,7 +80,7 @@ export const GetInTouch = () => {
           </>
         ) : (
           <>
-            <Send size={20} />
+            <FiSend size={20} />
             Send Message
           </>
         )}

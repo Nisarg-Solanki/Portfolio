@@ -1,5 +1,5 @@
 import { PROJECTS } from "@/lib/constants";
-import { ExternalLink } from "lucide-react";
+import { FiExternalLink } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -58,7 +58,7 @@ export const Projects: FC = () => {
                   target="_blank"
                   className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-4 transition-all"
                 >
-                  View Project <ExternalLink size={16} />
+                  View Project <FiExternalLink size={16} />
                 </Link>
               </div>
             </div>

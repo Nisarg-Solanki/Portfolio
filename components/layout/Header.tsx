@@ -1,5 +1,5 @@
 "use client";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { FiMoon, FiSun, FiMenu, FiX } from "react-icons/fi";
 import { useTheme } from "../ThemeProvider";
 import { FC, useEffect, useState } from "react";
 import Link from "next/link";
@@ -61,7 +61,7 @@ export const Header: FC = () => {
               className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all"
               aria-label="Toggle theme"
             >
-              {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+              {theme === "light" ? <FiMoon size={20} /> : <FiSun size={20} />}
             </button>
           </div>
 
@@ -72,14 +72,14 @@ export const Header: FC = () => {
               className="p-2 rounded-full bg-gray-200 dark:bg-gray-800"
               aria-label="Toggle theme"
             >
-              {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+              {theme === "light" ? <FiMoon size={20} /> : <FiSun size={20} />}
             </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
             </button>
           </div>
         </div>

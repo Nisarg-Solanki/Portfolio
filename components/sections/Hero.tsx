@@ -1,4 +1,10 @@
-import { Download, Github, Linkedin, Mail, Send } from "lucide-react";
+import {
+  FiDownload,
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiSend,
+} from "react-icons/fi";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "@/lib/constants";
 import Link from "next/link";
 import Image from "next/image";
@@ -32,7 +38,7 @@ export const Hero: React.FC = () => {
                 href="#contact"
                 className="px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
               >
-                <Send size={20} />
+                <FiSend size={20} />
                 Get In Touch
               </Link>
               <Link
@@ -40,7 +46,7 @@ export const Hero: React.FC = () => {
                 target="_blank"
                 className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-full font-medium hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2 border-2 border-gray-200 dark:border-gray-700"
               >
-                <Download size={20} />
+                <FiDownload size={20} />
                 Download CV
               </Link>
             </div>
@@ -51,7 +57,7 @@ export const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="p-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-xl hover:scale-110"
               >
-                <Github size={24} />
+                <FiGithub size={24} />
               </Link>
               <Link
                 href={SOCIAL_LINKS.linkedin}
@@ -59,13 +65,13 @@ export const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="p-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-xl hover:scale-110"
               >
-                <Linkedin size={24} />
+                <FiLinkedin size={24} />
               </Link>
               <Link
                 href={SOCIAL_LINKS.email}
                 className="p-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-xl hover:scale-110"
               >
-                <Mail size={24} />
+                <FiMail size={24} />
               </Link>
             </div>
           </div>
