@@ -1,4 +1,4 @@
-import { SKILL_CATEGORIES } from "@/lib/constants";
+import { SKILL_CATEGORIES, SKILLS } from "@/lib/constants";
 import { FC } from "react";
 
 export const Skills: FC = () => {
@@ -17,8 +17,21 @@ export const Skills: FC = () => {
           </h2>
           <div className="w-24 h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
         </div>
+        <div className="flex justify-center w-full">
+          <div className="flex justify-center md:gap-10 gap-8 md:max-w-[80%] px-4 flex-wrap">
+            {SKILLS.map(({ logo: Logo, name, color }) => (
+              <div
+                key={name}
+                className="flex flex-col gap-1 items-center max-md:text-sm"
+              >
+                <Logo size={40} style={{ color }} />
+                {name}
+              </div>
+            ))}
+          </div>
+        </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        {/* <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           {SKILL_CATEGORIES.map((category, index) => (
             <div
               key={index}
@@ -49,7 +62,7 @@ export const Skills: FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

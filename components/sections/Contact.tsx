@@ -1,5 +1,5 @@
 import { PERSONAL_INFO } from "@/lib/constants";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FC } from "react";
 import { GetInTouch } from "../forms/GetInTouch";
 
@@ -25,7 +25,7 @@ export const Contact: FC = () => {
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-6 bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl">
               <div className="p-3 bg-blue-600 rounded-full text-white">
-                <Mail size={24} />
+                <FiMail size={24} />
               </div>
               <div>
                 <h3 className="font-bold text-gray-900 dark:text-white mb-1">
@@ -39,7 +39,7 @@ export const Contact: FC = () => {
             {PERSONAL_INFO?.phone && (
               <div className="flex items-start gap-4 p-6 bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl">
                 <div className="p-3 bg-purple-600 rounded-full text-white">
-                  <Phone size={24} />
+                  <FiPhone size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 dark:text-white mb-1">
@@ -54,7 +54,7 @@ export const Contact: FC = () => {
             {PERSONAL_INFO.location && (
               <div className="flex items-start gap-4 p-6 bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl">
                 <div className="p-3 bg-pink-600 rounded-full text-white">
-                  <MapPin size={24} />
+                  <FiMapPin size={24} />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 dark:text-white mb-1">

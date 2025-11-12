@@ -1,6 +1,5 @@
 import { FC } from "react";
-import { Github, Mail } from "lucide-react";
-import { Linkedin } from "lucide-react";
+import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "@/lib/constants";
 import Link from "next/link";
 
@@ -18,21 +17,21 @@ export const Footer: FC = () => {
               href={SOCIAL_LINKS.github}
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              <Github size={24} />
+              <FiGithub size={24} />
             </Link>
             <Link
               prefetch={false}
               href={SOCIAL_LINKS.linkedin}
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              <Linkedin size={24} />
+              <FiLinkedin size={24} />
             </Link>
             <Link
               prefetch={false}
               href={SOCIAL_LINKS.email}
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              <Mail size={24} />
+              <FiMail size={24} />
             </Link>
           </div>
         </div>
