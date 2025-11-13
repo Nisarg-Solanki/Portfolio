@@ -1,13 +1,3 @@
-// module.exports = {
-//   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-//   darkMode: "class",
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
-
-// tailwind.config.ts (Tailwind CSS v4)
 import type { Config } from "tailwindcss";
 
 const config: Config = {
