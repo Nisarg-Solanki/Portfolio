@@ -21,7 +21,7 @@ export const PERSONAL_INFO = {
   email: "solankinisarg815@gmail.com",
   phone: "",
   location: "",
-  bio: "Full Stack Developer specializing in building exceptional digital experiences with modern web technologies",
+  bio: "Frontend-focused MERN Stack Developer specializing in building fast, intuitive, and modern web experiences.",
   avatar: "/nisarg-profile.JPG",
 };
 
@@ -90,7 +90,7 @@ export const EXPERIENCES = [
     position: "Frontend Developer",
     period: "JAN 2024 - OCT 2025",
     description:
-      "Developed and maintained multiple client projects using modern web technologies.",
+      "Developed and maintained high-quality client projects using modern frontend technologies, delivering responsive, user-centric interfaces and optimized performance.",
     icon: "🚀",
   },
 ];

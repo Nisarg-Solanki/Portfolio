@@ -19,15 +19,18 @@ export const About: React.FC = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm a passionate Full Stack Developer with expertise in building
-              modern, high-performance web applications. I enjoy transforming
-              complex problems into simple, elegant, and intuitive solutions.
+              I'm a passionate Frontend-focused MERN Stack Developer with a
+              strong interest in creating modern, high-performance web
+              interfaces. I enjoy turning complex ideas into clean, responsive,
+              and visually appealing user experiences.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              With a strong foundation in both frontend and backend development,
-              I focus on creating seamless, responsive, and user-centric
-              experiences that not only engage users but also drive business
-              growth and efficiency.
+              While I work across the MERN stack, my core strength lies in
+              building intuitive frontend applications using React. I focus on
+              crafting seamless UI/UX, optimizing performance, and ensuring that
+              every interaction feels smooth and meaningful. On the backend, I
+              leverage Node.js and Express to build reliable APIs that power
+              these experiences effectively.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="space-y-3">
